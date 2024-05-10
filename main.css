@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar searchbar searchbar"
+                        "sidebar accountbar accountbar"
+                        "sidebar contentbar endbar";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: lightseagreen;
+    padding: 2vh;
+    
+}
+
+.sidebar h1{
+    height: auto;
+    color: aliceblue;
+    margin-bottom: 2vh;
+}
+
+li {
+    margin-bottom: 1vh;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.mainlist {
+    height: 30%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.supportlist {
+    height: 20%;
+    list-style-type: none;
+}
+
+.searchbar {
+    grid-area: searchbar;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.notif-icon{
+    font-size: 2.5vh;
+    margin-right: 1vh;
+}
+
+.account img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5vh;
+}
+
+.search-input {
+    border-radius: 2vh;
+    padding: 1vh;
+    width: 50vh;
+}
+
+.accountbar {
+    grid-area: accountbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+}
+
+.accountintro {
+    display: flex;
+    align-items: center;
+}
+
+.accountbar img {
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 7.5vh;
+    margin-right: 2vh;
+}
+
+.introbuttons {
+    display:flex;
+    align-items: center;
+}
+
+.introbuttons button {
+    padding: 1vh;
+    background-color:cadetblue;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 1vh;
+    margin-left: 1vh;
+}
+
+.content {
+    grid-area: contentbar;
+    margin-left: 4vh;
+}
+
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2vh;
+}
+
+
+.card {
+    background-color: aliceblue;
+    padding: 2vh;
+}
+
+.projectscont {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectscont h2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.endbar {
+    grid-area: endbar;
+    display: grid;
+    grid-template-areas: "announcements" "trending";
+    margin-left: 2vh;
+    margin-right: 2vh;
+    grid-gap: 2vh;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.announcecont h2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.announcecard {
+    background-color: aliceblue;
+    padding: 2vh;
+
+}
+
+.trending {
+    grid-area: trending;
+    background-color: aliceblue;
+}
+
+.trendingcard {
+    display: flex;
+    padding: 2vh;
+}
+
+.trendingcard img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5vh;
+    margin-right: 1vh;
+}
+
+.trendingname {
+    display: flex;
+    flex-direction: column;
+}
+
+.trendingname p:first-child {
+    font-weight: 700;
+}
+
